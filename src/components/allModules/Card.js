@@ -3,21 +3,41 @@ import React from "react";
 import { useState } from "react";
 
 const Card =(cardData)=>{
-    const [hover, setHover] =useState(false);
-    console.log(cardData.cardData.number)
+  const [hover, setHover] = useState(false);
+  const [showContent, setShowContent]=useState(false)
+  console.log(cardData.cardData.number)
+  const handleMouseEnter = () => {
+    setHover(true)
+    setTimeout(() => setShowContent(true), 900)
+  }
+  const handleMouseLeave = () => {
+    setHover(false);
+
+    setShowContent(false)
+  }
     return (
       <CustomCard
         key={cardData.cardData.id}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        
         hover={hover}
       >
         <span id="cardHeader">
-          <img src={cardData.cardData.number} alt={'card-number'} />
+          <img src={cardData.cardData.number} alt={"card-number"} />
           <p>{cardData.cardData.title}</p>
         </span>
-        <img id={"purple-logo"} src={cardData.cardData.image} alt={"title-representation"} />
-        {hover && <p>{cardData.cardData.contentHead}</p>}
+        <img
+          id={"purple-logo"}
+          src={cardData.cardData.image}
+          alt={"title-representation"}
+        />
+        {hover && (
+          <>
+            <span id={'descriptionHeader'}>{cardData.cardData.contentHead}</span>
+            <p className={showContent ? 'para-appear' : 'para-appear hidden'}>{showContent && cardData.cardData.contentParagraph}</p>
+          </>
+        )}
       </CustomCard>
     )
 }
@@ -65,6 +85,20 @@ const CustomCard = styled.div`
     line-height: 36px;
     color: black;
   }
+  .para-appear.hidden{
+    opacity: 0%;
+    transition: opacity 1s ease-in;
+  }
+  .para-appear{
+    opacity: 100%;
+    font-family: 'archivo';
+    font-weight: 700;
+    transition: opacity .5s ease-in;
+  }
+  #descriptionHeader{
+    font-size:18px;
+    font-weight: 750;
+  }
   @media screen and (min-width: 1441px) {
     padding: 20px 40px 30px 50px;
     gap: 12px;
@@ -72,7 +106,8 @@ const CustomCard = styled.div`
   ${({ hover }) =>
     hover &&
     css`
-      height:400px;
-      width: 300px;
+      height: 400px;
+      width: 350px;
+      cursor: pointer;
     `}
 `
