@@ -146,7 +146,7 @@ const ServerlessDiv = styled.div`
     text-align: center;
     padding: 9vw 6vw;
     gap: 2.804vw;
-   
+
     #head-h2 {
       font-family: Archivo;
       font-style: normal;
@@ -297,18 +297,18 @@ const ContentSectionOne = styled.div`
   }
 `
 const DoubleColumnSwitch = styled.div`
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  padding: 6.944vw 10.278vw;
-  gap: 4.583vw;
-  width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 6.944vw 10.278vw;
+    gap: 4.583vw;
+    width: 100%;
   img {
     height: auto;
     width: 35.694vw;
   }
   @media screen and (min-width: 1440px) {
-    padding:2vw;
+    padding: 2vw;
     gap: 66px;
     width: 1440px;
     img {

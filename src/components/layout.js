@@ -9,7 +9,7 @@ import * as React from "react"
 import GlobalStyles from "./GlobalStyles";
 import TopMod from "./allModules/TopMod";
 import ServerlessTech from "./allModules/ServerlessTech";
-
+import FourOption from './allModules/FourOption'
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
       <GlobalStyles/>
         <TopMod />
         <ServerlessTech />
+        <FourOption/>
     
     </>
   )
