@@ -32,7 +32,7 @@ const TopModContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 43vw;
+  height: 630px;
   background-image: url("https://printerlogic.com/static/HPHeroBG-897435bd9f7bea03d886b5a8960bba52.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -104,8 +104,8 @@ const StyledH1 = styled.h1`
     font-size: 5vw;
     line-height: 6vw;
   }
-  @media screen and (max-width: 428px){
-    font-size:11vw;
+  @media screen and (max-width: 428px) {
+    font-size: 11vw;
     line-height: 13vw;
   }
 `
@@ -176,7 +176,7 @@ const StyledButton = styled.div`
     width: auto;
     border: 0.5vw solid rgb(255, 81, 0);
   }
-  transition: background-color .4s ;
+  transition: background-color 0.4s;
   &:hover {
     cursor: pointer;
     background-color: white;

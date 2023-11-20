@@ -6,9 +6,9 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import GlobalStyles from "./GlobalStyles";
 import TopMod from "./allModules/TopMod";
-
+import ServerlessTech from "./allModules/ServerlessTech";
 
 import "./layout.css"
 
@@ -17,7 +17,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <TopMod/>
+      <GlobalStyles/>
+        <TopMod />
+        <ServerlessTech />
+    
     </>
   )
 }
