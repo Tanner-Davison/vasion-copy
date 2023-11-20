@@ -197,10 +197,10 @@ const DoubleColumn = styled.div`
   }
   @media screen and (max-width: 428px) {
     flex-direction: column-reverse;
-    padding: 9.346vw 6.075vw;
-    gap: 9.813vw;
+    padding: 9vw 6vw;
+    gap: 9vw;
     img {
-      width: 87.85vw;
+      width: 85vw;
     }
   }
 `
@@ -299,7 +299,7 @@ const ContentSectionOne = styled.div`
 const DoubleColumnSwitch = styled.div`
   display: flex;
   flex-direction: row-reverse;
-  
+  align-items: center;
   padding: 6.944vw 10.278vw;
   gap: 4.583vw;
   width: 100%;
