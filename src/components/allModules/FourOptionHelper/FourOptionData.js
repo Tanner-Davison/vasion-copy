@@ -24,7 +24,7 @@ const FourOptionData = [
       number: Two,
       title: "Manage",
       image: Manage,
-      contentHead: "Simplify your transition.",
+      contentHead: "StreamLine your management.",
       contentParagraph:
         "Automatically import your existing printer objects and eliminate all print servers. Easily add all printers and devices regardless of manufacturer or model.",
     },
@@ -33,7 +33,7 @@ const FourOptionData = [
       number:Three,
       title: "Deploy",
       image: Deploy,
-      contentHead: "Simplify your transition.",
+      contentHead: "Minimize IT needs.",
       contentParagraph:
         "Automatically import your existing printer objects and eliminate all print servers. Easily add all printers and devices regardless of manufacturer or model.",
     },
@@ -42,7 +42,7 @@ const FourOptionData = [
       number: Four,
       title: "Print",
       image: Print,
-      contentHead: "Simplify your transition.",
+      contentHead: "Maximize security.",
       contentParagraph:
         "Automatically import your existing printer objects and eliminate all print servers. Easily add all printers and devices regardless of manufacturer or model.",
     },
