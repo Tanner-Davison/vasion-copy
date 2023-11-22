@@ -74,6 +74,9 @@ const CustomCard = styled.div`
   #cardHeader {
     position: relative;
     display: flex;
+    align-self: center;
+    position: relative;
+    display: flex;
     width: 100%;
     height: fit-content;
     gap: 10px;
@@ -104,7 +107,7 @@ const CustomCard = styled.div`
     transition: opacity 0.3s ease-in;
   }
   .para-appear {
-    font-family: 'Archivo';
+    font-family: "Archivo";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -114,11 +117,57 @@ const CustomCard = styled.div`
     padding: 20px 40px 30px 50px;
     gap: 12px;
   }
+  @media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .descriptionHeader {
+      font-family: Archivo;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.25vw;
+      line-height: 1.875vw;
+      opacity: 1;
+    }
+    .para-appear {
+      font-family: Archivo;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.25vw;
+      line-height: 1.875vw;
+    }
+  }
+  @media screen and (min-width: 429px) and (max-width: 1024px) {
+    width: 19.629vw;
+    height: 18.652vw;
+    gap: 1.172vw;
+    border-radius: 1.367vw;
+    padding: 1.953vw 4.883vw 2.93vw 2.93vw;
+    ${({ hover }) =>
+      hover &&
+      css`
+        width: 44.732vw;
+        height: 39.453vw;
+        cursor: pointer;
+      `};
+    .descriptionHeader {
+      font-family: Archivo;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.25vw;
+      line-height: 1.875vw;
+      opacity: 1;
+    }
+    .para-appear {
+      font-family: Archivo;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.758vw;
+      line-height: 2.637vw;
+    }
+  }
   ${({ hover }) =>
     hover &&
     css`
       height: 404px;
       width: 340px;
       cursor: pointer;
-    `}
+    `};
 `

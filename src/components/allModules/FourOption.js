@@ -32,6 +32,9 @@ const IconDrop = styled.div`
   padding: 7vw 10vw;
   margin-bottom: 0px;
 
+  @media screen and (min-width: 429px) and (max-width: 1024px){
+    padding:3vw 2vw;
+  } 
   h3 {
     font-family: Archivo;
     font-size: 34px;
@@ -41,7 +44,6 @@ const IconDrop = styled.div`
     width: 565px;
   }
   @media screen and (min-width: 1441px) {
-    
     gap: 40px;
     width: 100vw;
     height: 724px;
@@ -50,12 +52,15 @@ const IconDrop = styled.div`
   }
 `
 const DropDownWrapper = styled.div`
-  position: relative;
   display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  outline: 2px solid red;
-  padding:25px;
-  width:fit-content;
+  flex-direction: row;
+  gap: 0.972vw;
+
+  @media screen and (min-width: 429px) and (max-width: 1024px) {
+    position: relative;
+    align-self:center;
+    width:98vw;
+    
+  }
 `
 
