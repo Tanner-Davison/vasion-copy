@@ -5,13 +5,13 @@ import { useState } from "react";
 const Card =(cardData)=>{
   const [hover, setHover] = useState(false);
   const [showContent, setShowContent]=useState(false)
-  console.log(cardData.cardData.number)
+  
   const handleMouseEnter = () => {
-    setHover(true)
-    setTimeout(() => setShowContent(true), 900)
+    setHover((prev)=>!prev)
+    setTimeout(() => setShowContent(true), 1000)
   }
   const handleMouseLeave = () => {
-    setHover(false);
+    setHover((prev)=>!prev);
 
     setShowContent(false)
   }
@@ -34,7 +34,7 @@ const Card =(cardData)=>{
         />
         {hover && (
           <>
-            <span id={'descriptionHeader'}>{cardData.cardData.contentHead}</span>
+            <span className={showContent ? 'descriptionHeader':'descriptionHeader hidden' }>{cardData.cardData.contentHead}</span>
             <p className={showContent ? 'para-appear' : 'para-appear hidden'}>{showContent && cardData.cardData.contentParagraph}</p>
           </>
         )}
@@ -52,14 +52,14 @@ const CustomCard = styled.div`
   padding: 20px 50px 30px 50px;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 11px;
   outline: 2px solid blue;
   margin: 5px;
   border-radius: 14px;
   background: #f6f7f7;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
-  transition: width 1s ease-in-out, height 1s ease-in-out;
-
+  transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
+  overflow-y: hidden;
   img {
     position: relative;
     display: flex;
@@ -85,19 +85,29 @@ const CustomCard = styled.div`
     line-height: 36px;
     color: black;
   }
-  .para-appear.hidden{
+  .descriptionHeader.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ;
+  }
+  .descriptionHeader {
+    font-size: 18px;
+    font-weight: 650;
+    opacity:1;
+    transition: opacity 0.3s;
+    align-self: flex-start;
+  }
+  .para-appear.hidden {
     opacity: 0%;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.3s ease-in;
   }
-  .para-appear{
+  .para-appear {
+    display: flex;
     opacity: 100%;
-    font-family: 'archivo';
-    font-weight: 700;
-    transition: opacity .5s ease-in;
-  }
-  #descriptionHeader{
-    font-size:18px;
-    font-weight: 750;
+    font-family: "archivo";
+    font-weight: 600;
+    transition: opacity 0.3s ease-in;
+    flex-wrap: none;
+    word-wrap: none;
   }
   @media screen and (min-width: 1441px) {
     padding: 20px 40px 30px 50px;
