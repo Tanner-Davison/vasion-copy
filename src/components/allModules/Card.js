@@ -34,7 +34,7 @@ const Card =(cardData)=>{
         />
         {hover && (
           <>
-            <span className={showContent ? 'descriptionHeader':'descriptionHeader hidden' }>{cardData.cardData.contentHead}</span>
+            <p className={showContent ? 'descriptionHeader':'descriptionHeader hidden' }>{cardData.cardData.contentHead}</p>
             <p className={showContent ? 'para-appear' : 'para-appear hidden'}>{showContent && cardData.cardData.contentParagraph}</p>
           </>
         )}
@@ -48,7 +48,7 @@ const CustomCard = styled.div`
   position: relative;
   display: flex;
   width: 254px;
-  height: 254px;
+  height: 191px;
   padding: 20px 50px 30px 50px;
   flex-direction: column;
   align-items: center;
@@ -60,6 +60,7 @@ const CustomCard = styled.div`
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
   transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
   overflow-y: hidden;
+
   img {
     position: relative;
     display: flex;
@@ -87,13 +88,15 @@ const CustomCard = styled.div`
   }
   .descriptionHeader.hidden {
     opacity: 0;
-    transition: opacity 0.3s ;
+    transition: opacity 0.3s;
   }
   .descriptionHeader {
+    font-family: "archivo";
     font-size: 18px;
-    font-weight: 650;
-    opacity:1;
+    font-weight: 700;
+    opacity: 1;
     transition: opacity 0.3s;
+    line-height: 27px;
     align-self: flex-start;
   }
   .para-appear.hidden {
@@ -101,13 +104,11 @@ const CustomCard = styled.div`
     transition: opacity 0.3s ease-in;
   }
   .para-appear {
-    display: flex;
-    opacity: 100%;
-    font-family: "archivo";
-    font-weight: 600;
-    transition: opacity 0.3s ease-in;
-    flex-wrap: none;
-    word-wrap: none;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
   }
   @media screen and (min-width: 1441px) {
     padding: 20px 40px 30px 50px;
@@ -116,8 +117,8 @@ const CustomCard = styled.div`
   ${({ hover }) =>
     hover &&
     css`
-      height: 400px;
-      width: 350px;
+      height: 404px;
+      width: 340px;
       cursor: pointer;
     `}
 `

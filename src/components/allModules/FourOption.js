@@ -41,6 +41,7 @@ const IconDrop = styled.div`
     width: 565px;
   }
   @media screen and (min-width: 1441px) {
+    
     gap: 40px;
     width: 100vw;
     height: 724px;
@@ -54,5 +55,7 @@ const DropDownWrapper = styled.div`
   align-items: flex-start;
   gap: 14px;
   outline: 2px solid red;
+  padding:25px;
+  width:fit-content;
 `
 
