@@ -147,6 +147,7 @@ const CustomCard = styled.div`
         height: 39.453vw;
         cursor: pointer;
       `};
+
     .descriptionHeader {
       font-family: Archivo;
       font-style: normal;

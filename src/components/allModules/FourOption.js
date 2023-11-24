@@ -60,7 +60,6 @@ const DropDownWrapper = styled.div`
     position: relative;
     align-self:center;
     width:98vw;
-    
   }
 `
 
