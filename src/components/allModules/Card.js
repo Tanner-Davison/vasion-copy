@@ -140,11 +140,12 @@ const CustomCard = styled.div`
     gap: 1.172vw;
     border-radius: 1.367vw;
     padding: 1.953vw 4.883vw 2.93vw 2.93vw;
+
     ${({ hover }) =>
       hover &&
       css`
         width: 44.732vw;
-        height: 39.453vw;
+        height: 45.453vw;
         cursor: pointer;
       `};
 
@@ -152,7 +153,7 @@ const CustomCard = styled.div`
       font-family: Archivo;
       font-style: normal;
       font-weight: 700;
-      font-size: 1.25vw;
+      font-size: 1.5vw;
       line-height: 1.875vw;
       opacity: 1;
     }
@@ -163,11 +164,18 @@ const CustomCard = styled.div`
       font-size: 1.758vw;
       line-height: 2.637vw;
     }
+    #cardHeader>p {
+      font-family: Archivo;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.344vw;
+      line-height: 3.516vw;
+    }
   }
   ${({ hover }) =>
     hover &&
     css`
-      height: 404px;
+      height: 405px;
       width: 340px;
       cursor: pointer;
     `};
