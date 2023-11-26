@@ -11,7 +11,7 @@ import TopMod from "./allModules/TopMod";
 import ServerlessTech from "./allModules/ServerlessTech";
 import FourOption from './allModules/FourOption'
 import "./layout.css"
-
+import Carosoul from "./allModules/Carousole";
 const Layout = ({ children }) => {
 
 
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         <TopMod />
         <ServerlessTech />
         <FourOption/>
-    
+        <Carosoul/>
     </>
   )
 }

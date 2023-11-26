@@ -8,12 +8,12 @@ const Card =(cardData)=>{
   
   const handleMouseEnter = () => {
     setHover((prev)=>!prev)
-    setTimeout(() => setShowContent(true), 1000)
+    setTimeout(() => setShowContent(true), 800)
   }
   const handleMouseLeave = () => {
     setHover((prev)=>!prev);
 
-    setShowContent(false)
+    setShowContent(prev=>!prev)
   }
     return (
       <CustomCard
@@ -53,12 +53,12 @@ const CustomCard = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 11px;
-  outline: 2px solid blue;
+  
   margin: 5px;
   border-radius: 14px;
   background: #f6f7f7;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
-  transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.7s ease-in-out;
   overflow-y: hidden;
 
   img {
@@ -91,20 +91,20 @@ const CustomCard = styled.div`
   }
   .descriptionHeader.hidden {
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.4s;
   }
   .descriptionHeader {
     font-family: "archivo";
     font-size: 18px;
     font-weight: 700;
     opacity: 1;
-    transition: opacity 0.3s;
+    transition: opacity .2s;
     line-height: 27px;
     align-self: flex-start;
   }
   .para-appear.hidden {
     opacity: 0%;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 2s ease-in;
   }
   .para-appear {
     font-family: "Archivo";
@@ -112,6 +112,7 @@ const CustomCard = styled.div`
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
+    transition: opacity 0.6s ease-in;
   }
   @media screen and (min-width: 1441px) {
     padding: 20px 40px 30px 50px;
@@ -139,13 +140,13 @@ const CustomCard = styled.div`
     height: 18.652vw;
     gap: 1.172vw;
     border-radius: 1.367vw;
-    padding: 1.953vw 4.883vw 2.93vw 2.93vw;
+    padding: 2vw 5vw 3vw 3vw;
 
     ${({ hover }) =>
       hover &&
       css`
-        width: 44.732vw;
-        height: 45.453vw;
+        width: 27.732vw;
+        height: 43.453vw;
         cursor: pointer;
       `};
 
@@ -164,13 +165,88 @@ const CustomCard = styled.div`
       font-size: 1.758vw;
       line-height: 2.637vw;
     }
-    #cardHeader>p {
+    #cardHeader > p {
       font-family: Archivo;
       font-style: normal;
       font-weight: 700;
       font-size: 2.344vw;
       line-height: 3.516vw;
     }
+  }
+  @media screen and (max-width: 428px) {
+    width: 19.629vw;
+    height: 18.652vw;
+    gap: 1.172vw;
+    border-radius: 1.367vw;
+    padding: 2vw 5vw 3vw 3vw;
+
+    ${({ hover }) =>
+      hover &&
+      css`
+        width: 27.732vw;
+        height: 43.453vw;
+        cursor: pointer;
+      `};
+
+    .descriptionHeader {
+      font-family: Archivo;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.5vw;
+      line-height: 1.875vw;
+      opacity: 1;
+    }
+    .para-appear {
+      font-family: Archivo;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.758vw;
+      line-height: 2.637vw;
+    }
+    #cardHeader > p {
+      font-family: Archivo;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.344vw;
+      line-height: 3.516vw;
+    }
+  }
+  @media screen and (max-width: 429px) {
+    width: 88vw;
+    height: 43vw;
+    gap: 1.172vw;
+    border-radius: 1.367vw;
+    padding: 2vw 5vw 3vw 3vw;
+    #cardHeader {
+      width: 100%;
+      gap: 3.271vw;
+
+      justify-content: flex-start;
+    }
+    #cardHeader > p {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    #purple-logo {
+      width: 18.049vw;
+      height: 16.832vw;
+    }
+    .para-appear {
+      font-family: Archivo;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.758vw;
+      line-height: 6.637vw;
+    }
+    .descriptionHeader {
+      font-size: 4.3vw;
+      line-height: 6vw;
+    }
+    ${({ hover }) =>
+      hover &&
+      css`
+        height: 355px;
+      `};
   }
   ${({ hover }) =>
     hover &&

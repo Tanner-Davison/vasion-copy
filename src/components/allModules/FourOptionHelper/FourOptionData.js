@@ -24,7 +24,7 @@ const FourOptionData = [
     number: Two,
     title: "Manage",
     image: Manage,
-    contentHead: "StreamLine your management.",
+    contentHead: "Streamline your management.",
     contentParagraph:
       "Centrally manage printer objects, drivers, profiles, and settings from our Admin Console. Get visibility into all users, devices, and more from one centralized screen.",
   },
