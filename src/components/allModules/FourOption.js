@@ -31,7 +31,7 @@ const IconDrop = styled.div`
   height: fit-content;
   gap: 2vw;
   width: 100%;
-  padding: 7vw 10vw;
+  padding: 7vw 10vw 17vw 10vw;
   margin-bottom: 0px;
 
   @media screen and (min-width: 429px) and (max-width: 1024px) {
@@ -50,7 +50,7 @@ const IconDrop = styled.div`
     gap: 40px;
     width: 100vw;
     height: 724px;
-    padding: 100px 20vw;
+    padding: 100px 20vw 0px 20vw;
     margin-bottom: 0px;
   }
   @media screen and (max-width: 428px) {

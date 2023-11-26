@@ -13,6 +13,7 @@ import FourOption from './allModules/FourOption'
 import "./layout.css"
 import Carosoul from "./allModules/Carousole";
 import CardComponent from "./allModules/CardComponent";
+import PullQuote from "./PullQuote";
 const Layout = ({ children }) => {
 
 
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
         <FourOption/>
         <Carosoul/>
         <CardComponent/>
+        <PullQuote/>
     </>
   )
 }
