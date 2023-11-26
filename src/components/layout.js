@@ -12,6 +12,7 @@ import ServerlessTech from "./allModules/ServerlessTech";
 import FourOption from './allModules/FourOption'
 import "./layout.css"
 import Carosoul from "./allModules/Carousole";
+import CardComponent from "./allModules/CardComponent";
 const Layout = ({ children }) => {
 
 
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
         <ServerlessTech />
         <FourOption/>
         <Carosoul/>
+        <CardComponent/>
     </>
   )
 }

@@ -30,7 +30,7 @@ const CarosoulWrapper = styled.div`
   gap: 30px;
   align-items: center;
   justify-content: center;
-  background-color: purple;
+  
 
   img {
     height: 2.5vw;
@@ -45,7 +45,9 @@ const CarosoulWrapper = styled.div`
   }
   .logos {
     display: flex;
-    gap: 75px;
+    gap: 78px;
+    align-items: center;
+    justify-content: center;
   }
   @media screen and (min-width: 1441px) {
     padding: 32px 100px;
@@ -59,14 +61,45 @@ const CarosoulWrapper = styled.div`
     gap: 10px;
     h3 {
       color: #fff;
-
       text-align: center;
-      /* Headings/h3Desktop */
       font-family: Archivo;
-      font-size: 34px;
+      font-size: 29px;
       font-style: normal;
       font-weight: 700;
       line-height: 40px;
+    }
+    img {
+      height: 4vw;
+    }
+    .logos {
+      gap: 30px;
+    }
+  }
+  @media screen and (max-width: 428px) {
+    display: flex;
+    width: 428px;
+    padding: 40px 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    .logos {
+      display: flex;
+      align-items: center;
+      gap: 33px;
+      overflow-x: hidden;
+    }
+    img {
+      width: 126px;
+      height: 27px;
+    }
+    h3 {
+      font-family: Archivo;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px;
+      
     }
   }
 `
@@ -74,8 +107,7 @@ const CarosoulContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: rgb(61, 37, 98);
-
-  padding: 32px 100px;
+  padding: 34px 30px;
   width: 90%;
   align-items: center;
   gap: 40px;

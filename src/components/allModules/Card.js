@@ -53,7 +53,7 @@ const CustomCard = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 11px;
-  
+
   margin: 5px;
   border-radius: 14px;
   background: #f6f7f7;
@@ -98,7 +98,7 @@ const CustomCard = styled.div`
     font-size: 18px;
     font-weight: 700;
     opacity: 1;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
     line-height: 27px;
     align-self: flex-start;
   }
@@ -136,8 +136,8 @@ const CustomCard = styled.div`
     }
   }
   @media screen and (min-width: 429px) and (max-width: 1024px) {
-    width: 19.629vw;
-    height: 18.652vw;
+    width: 21.629vw;
+    height: 26.652vw;
     gap: 1.172vw;
     border-radius: 1.367vw;
     padding: 2vw 5vw 3vw 3vw;
@@ -145,8 +145,8 @@ const CustomCard = styled.div`
     ${({ hover }) =>
       hover &&
       css`
-        width: 27.732vw;
-        height: 43.453vw;
+        width: 35.732vw;
+        height: 58.453vw;
         cursor: pointer;
       `};
 
