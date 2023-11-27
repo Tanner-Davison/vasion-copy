@@ -20,7 +20,7 @@ const PullQuote = () => {
         <span>“</span>
         <p id={"bottom-link"}> See what other customers have to say →</p>
       </div>
-      <img src={rightPng} alt={"rightArrow"} id={"imageId"} />
+      <img src={RightPng} alt={"rightArrow"} id={"imageId"} />
     </ComponentWrapper>
   )
 }
