@@ -187,7 +187,7 @@ const ComponentWrapper = styled.div`
       color: #ff5100;
       left: 5%;
       font-family: Archivo;
-      font-size: 16px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 700;
       line-height: 20px;

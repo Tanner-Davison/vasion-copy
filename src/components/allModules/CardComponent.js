@@ -210,6 +210,12 @@ const Wrapper = styled.div`
       gap: 67px;
       padding: 2vw 10vw 7vw;
     }
+    .headerWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
     .card-container > h3 {
       font-family: Archivo;
       font-size: 12vw;
