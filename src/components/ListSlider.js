@@ -159,7 +159,7 @@ const Wrapper = styled.div`
       display: flex;
       align-items: flex-start;
       gap: 9px;
-      width: 46vw;
+      width: 53vw;
     }
     p {
       color: var(--grey-grey-800191-d-1-e, #191d1e);

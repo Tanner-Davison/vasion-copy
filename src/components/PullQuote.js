@@ -120,11 +120,14 @@ const ComponentWrapper = styled.div`
     position: relative;
     display: inline-flex;
     width: 100vw;
-    padding: 1vw 3.5vw 16vw 3.5vw;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: 6vw;
+    gap: 1vw;
+    #imageId {
+      width: 4vw;
+      height: 6vw;
+    }
     .middleDiv {
       position: relative;
       display: flex;
