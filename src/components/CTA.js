@@ -27,6 +27,13 @@ const AllWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  #buttonId{
+    transition:transform .3s ease-in-out
+  }
+  #buttonId:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
   @media screen and (min-width: 429px) and (max-width: 1024px) {
     display: inline-flex;
     padding: 57px 55px;
@@ -59,6 +66,7 @@ const ContentDiv = styled.div`
       rgba(0, 0, 0, 0.2) 100%
     ),
     #3d2562;
+    
   h3 {
     color: var(--grey-white-ffffff, #fff);
     font-family: Archivo;
@@ -79,6 +87,9 @@ const ContentDiv = styled.div`
     border-radius: 28px;
     background: var(--orange-primary-orange-ff-5100, #ff5100);
     color: white;
+  }
+  #buttonId:hover{
+    transform: scale(1.1);
   }
   #buttonId >p{
     font-size: 1em;

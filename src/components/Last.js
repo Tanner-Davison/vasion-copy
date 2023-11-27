@@ -9,12 +9,12 @@ const Last = () => {
         Get a customized demo with our experts to see how simple and secure
         eliminating your print servers can be.
       </p>
-      <button> Schedule A Demo</button>
+      <button > Schedule A Demo</button>
     </Wrapper>
   )
 }
 
-export default Last;
+export default Last
 
 const Wrapper = styled.div`
   display: flex;
@@ -24,6 +24,14 @@ const Wrapper = styled.div`
   align-items: center;
   gap: 24px;
   background: #3d2562;
+  button {
+    transition: transform 0.3s ease-in-out;
+    color:white;
+    border:none;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
   h2 {
     color: var(--grey-white-ffffff, #fff);
     text-align: center;
@@ -52,7 +60,14 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 1px;
     border-radius: 28px;
+    color:white;
     background: var(--orange-primary-orange-ff-5100, #ff5100);
+  }
+  button {
+    transition: transform 0.3s ease-in-out;
+  }
+  button:hover {
+    transform: scale(1.1);
   }
   @media screen and (min-width: 428px) and (max-width: 1024px) {
     display: flex;
@@ -89,9 +104,16 @@ const Wrapper = styled.div`
       justify-content: center;
       align-items: center;
       gap: 1px;
+      color:white;
       border-radius: 28px;
       border: none;
       background: var(--orange-primary-orange-ff-5100, #ff5100);
+    }
+    button {
+      transition: transform 0.3s ease-in-out;
+    }
+    button:hover {
+      transform: scale(1.1);
     }
   }
   @media screen and (max-width: 428px) {
@@ -130,6 +152,7 @@ const Wrapper = styled.div`
       padding: 10px 20px;
       justify-content: center;
       align-items: center;
+      color:white;
       gap: 1px;
       border-radius: 20px;
       background: var(--orange-primary-orange-ff-5100, #ff5100);
