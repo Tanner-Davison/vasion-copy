@@ -14,7 +14,7 @@ const Last = () => {
   )
 }
 
-export default Last
+export default Last;
 
 const Wrapper = styled.div`
   display: flex;

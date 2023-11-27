@@ -19,7 +19,7 @@ import Stats from "./Stats";
 import CTA from "./CTA";
 import SimpleCentered from "./SimpleCentered";
 import SmallInsert from "./smallInsert";
-import Last from "./last";
+import Last from "./Last";
 const Layout = ({ children }) => {
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BottomRightCircles from '../images/BottomRightCircles.png'
+
 const CTA = ()=>{
     return (
       <AllWrapper>
