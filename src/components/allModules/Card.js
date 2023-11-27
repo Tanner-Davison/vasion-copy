@@ -21,7 +21,7 @@ const Card =(cardData)=>{
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         
-        hover={hover}
+        hover={hover }
       >
         <span id="cardHeader">
           <img src={cardData.cardData.number} alt={"card-number"} />
