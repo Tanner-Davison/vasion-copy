@@ -33,7 +33,7 @@ const ComponentWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-left: 45px;
+
   padding-bottom: 100px;
   gap: 54px;
   @media screen and (min-width: 1441px) {
@@ -162,16 +162,24 @@ const ComponentWrapper = styled.div`
       line-height: 27px;
       padding-left: 11vw;
     }
+    #paragraphStamp {
+      color: var(--grey-grey-800191-d-1-e, #191d1e);
+      font-family: Archivo;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+    }
     span {
       position: absolute;
       top: 41px;
       left: 1px;
       color: var(--purple-primary-purple-591559, #591559);
       font-family: Archivo;
-      font-size: 104px;
+      font-size: 91px;
       font-style: normal;
       font-weight: 700;
-      line-height: 45px;
+      line-height: 26px;
     }
     #bottom-link {
       position: absolute;

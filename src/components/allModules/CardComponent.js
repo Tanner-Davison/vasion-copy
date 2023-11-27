@@ -198,16 +198,16 @@ const Wrapper = styled.div`
 
     .cards-wrapper {
       flex-direction: column;
-      gap: 0px;
+      gap: 20px;
       padding: 0vw 3.738vw 3.738vw;
     }
     .card-container {
       display: flex;
       width: 420px;
-      height: 91vw;
+      height: 105vw;
       flex-direction: column;
       align-items: center;
-      gap: 30px;
+      gap: 67px;
       padding: 2vw 10vw 7vw;
     }
     .card-container > h3 {
@@ -230,7 +230,8 @@ const Wrapper = styled.div`
       color: var(--grey-grey-800191-d-1-e, #191d1e);
       text-align: center;
       font-family: Archivo;
-      font-size: 40px;
+      font-size: 38px;
+      padding: 10px;
       font-style: normal;
       font-weight: 700;
       line-height: 42px;
