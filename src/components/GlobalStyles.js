@@ -13,6 +13,10 @@ const GlobalStyles = createGlobalStyle`
     padding:0px;
     color:black;
   }
+  *{
+    max-width: 100vw;
+  
+}
   h3{
     font-family: 'Archivo';
     margin:0px;

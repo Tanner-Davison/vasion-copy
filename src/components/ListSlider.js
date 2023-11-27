@@ -178,7 +178,7 @@ const Wrapper = styled.div`
 
   @media screen and (max-width: 428px) {
     display: flex;
-    width: 428px;
+    width: 100vw;
     padding: 40px 0px 40px 26px;
     flex-direction: column;
     align-items: flex-start;
@@ -207,32 +207,33 @@ const Wrapper = styled.div`
     }
     .content-wrapper {
       display: flex;
-      width: 402px;
+      width: 100vw;
       padding: 18px 26px 18px 0px;
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
-      #content-card {
-        display: flex;
-        align-items: flex-start;
-        gap: 8px;
-        width: 100vw;
-      }
-      img {
-        width: 10vw;
-        height: 26px;
-      }
-      span {
-        font-weight: 700;
-      }
-      p {
-        color: var(--grey-grey-800191-d-1-e, #191d1e);
-        font-family: Archivo;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 27px;
-      }
+    }
+    .content-wrapper p {
+      color: var(--grey-grey-800191-d-1-e, #191d1e);
+      font-family: Archivo;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      width: 80vw;
+      line-height: 27px;
+    }
+    #content-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      width: 100vw;
+    }
+    img {
+      width: 6vw;
+      height: 24px;
+    }
+    span {
+      font-weight: 700;
     }
   }
 `
