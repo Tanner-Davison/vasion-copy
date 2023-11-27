@@ -16,8 +16,10 @@ import CardComponent from "./allModules/CardComponent";
 import PullQuote from "./PullQuote";
 import ListSlider from "./ListSlider";
 import Stats from "./Stats";
-
-
+import CTA from "./CTA";
+import SimpleCentered from "./SimpleCentered";
+import SmallInsert from "./smallInsert";
+import Last from "./last";
 const Layout = ({ children }) => {
 
 
@@ -32,6 +34,10 @@ const Layout = ({ children }) => {
         <PullQuote/>
         <ListSlider/>
         <Stats/>
+        <CTA/>
+        <SmallInsert/>
+        <SimpleCentered/>
+        <Last/>
     </>
   )
 }
