@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import rightPng from "../images/rightPng.png"
+import RightPng from "../images/RightPng.png"
 import leftPng from "../images/leftPng.png"
 
 const PullQuote = () => {
