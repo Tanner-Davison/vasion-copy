@@ -1,46 +1,48 @@
-import React from "react";
-import styled from "styled-components";
-import rightPng from '../images/rightPng.png';
-import leftPng from '../images/leftPng.png';
+import React from "react"
+import styled from "styled-components"
+import rightPng from "../images/rightPng.png"
+import leftPng from "../images/leftPng.png"
 
-const PullQuote = () =>{
-    return (
-      <ComponentWrapper>
-        <img src={leftPng} alt={"left arrow"} id='imageId'/>
+const PullQuote = () => {
+  return (
+    <ComponentWrapper>
+      <img src={leftPng} alt={"left arrow"} id="imageId" />
 
-        <div className={"middleDiv"}>
-          <p className={"paragraph"} id={"paragraphMain"}>
-            We are thrilled to partner with PrinterLogic to offer our mutual
-            customers a simplified and enhanced printing experience.
-          </p>
+      <div className={"middleDiv"}>
+        <p className={"paragraph"} id={"paragraphMain"}>
+          We are thrilled to partner with PrinterLogic to offer our mutual
+          customers a simplified and enhanced printing experience.
+        </p>
 
-          <p className={"paragraph"} id={"paragraphStamp"}>
-            —Ed Kraft, Technology & User Services Manager, Regal Ware, Inc.
-          </p>
-          <span>“</span>
-          <p id={"bottom-link"}> See what other customers have to say →</p>
-        </div>
-        <img src={rightPng} alt={"rightArrow"} id={'imageId'} />
-      </ComponentWrapper>
-    )
-};
-export default PullQuote;
+        <p className={"paragraph"} id={"paragraphStamp"}>
+          —Ed Kraft, Technology & User Services Manager, Regal Ware, Inc.
+        </p>
+        <span>“</span>
+        <p id={"bottom-link"}> See what other customers have to say →</p>
+      </div>
+      <img src={rightPng} alt={"rightArrow"} id={"imageId"} />
+    </ComponentWrapper>
+  )
+}
+export default PullQuote
 
 const ComponentWrapper = styled.div`
   position: relative;
   display: inline-flex;
-  width: 100vw;
-
+  width: 98vw;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
+  padding-left: 45px;
+  padding-bottom: 100px;
+  gap: 54px;
   @media screen and (min-width: 1441px) {
     display: flex;
     width: 100vw;
-    padding: 60px  80px;
+    padding: 60px 80px;
     flex-direction: row;
     align-items: center;
+    gap: 10em;
   }
   #imageId {
     width: 30px;
@@ -129,7 +131,7 @@ const ComponentWrapper = styled.div`
       padding-top: 24px;
       align-items: flex-start;
       flex-direction: column;
-      width: 450px;
+      width: 80%;
       height: auto;
       gap: 24px;
     }
@@ -138,6 +140,7 @@ const ComponentWrapper = styled.div`
       line-height: 6vw;
       font-weight: 550;
       word-spacing: 2px;
+      padding-left: 8%;
     }
     #paragraphStamp {
       font-size: 13px;
@@ -145,6 +148,10 @@ const ComponentWrapper = styled.div`
   }
   @media screen and (max-width: 428px) {
     gap: 10px;
+    #imageId {
+      width: 15px;
+      height: 24px;
+    }
     .paragraph {
       font-size: 18px;
       font-style: normal;

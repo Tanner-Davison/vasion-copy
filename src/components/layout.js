@@ -14,6 +14,7 @@ import "./layout.css"
 import Carosoul from "./allModules/Carousole";
 import CardComponent from "./allModules/CardComponent";
 import PullQuote from "./PullQuote";
+import ListSlider from "./ListSlider";
 const Layout = ({ children }) => {
 
 
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
         <Carosoul/>
         <CardComponent/>
         <PullQuote/>
+        <ListSlider/>
     </>
   )
 }
