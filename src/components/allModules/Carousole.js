@@ -89,7 +89,7 @@ const CarosoulWrapper = styled.div`
     padding: 32px 100px;
     width: 100vw;
     .logoId {
-      height: 4vw;
+      height: 3.5vw;
     }
     .logos {
       animation: scroll 10s linear infinite;
