@@ -88,10 +88,16 @@ const CarosoulWrapper = styled.div`
   @media screen and (min-width: 1441px) {
     padding: 32px 100px;
     width: 100vw;
+    
     .logoId {
       height: 3.5vw;
     }
     .logos {
+      position: relative;
+      display: inline-block;
+      width: 119%;
+      gap: 78px;
+      white-space: nowrap;
       animation: scroll 10s linear infinite;
     }
   }
@@ -189,6 +195,7 @@ const CarosoulContainer = styled.div`
   border-radius: 24px;
   @media screen and (min-width: 1441px) {
     padding: 60px 114px;
+    width:75%;
   }
   @media screen and (min-width: 429px) and (max-width: 1024px) {
     display: flex;

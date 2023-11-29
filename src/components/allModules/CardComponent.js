@@ -187,7 +187,6 @@ const Wrapper = styled.div`
     display: flex;
     width: 100vw;
     height: auto;
-
     flex-direction: column;
     align-items: center;
     background-color: rgb(247, 245, 249);
@@ -200,13 +199,14 @@ const Wrapper = styled.div`
       padding: 0vw 3.738vw 3.738vw;
     }
     .card-container {
+      position: relative;
       display: flex;
       width: 95vw;
       height: auto;
       flex-direction: column;
       align-items: center;
-
       padding: 2vw 10vw 20vw;
+      z-index: 2;
     }
     .headerWrapper {
       display: flex;
@@ -246,7 +246,10 @@ const Wrapper = styled.div`
       bottom: -25px;
     }
     #buttonId {
-      left: 8%;
+      position: absolute;
+      left: 15px;
+      bottom:5px;
+      z-index: 4;
     }
   }
 `
