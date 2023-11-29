@@ -1,27 +1,25 @@
-import React from "react";
-import styled from "styled-components";
-import smallPic from '../images/smallPic.png'
-const SimpleCentered = () =>{
-
-    return (
-      <Wrapper>
-        <div className={"content"}>
-          <img src={smallPic} alt={"smallPic"} />
-          <div id={"textWrapper"}>
-            <h3>Simple and Secure Integrations</h3>
-            <p>
-              Our native integrations seamlessly connect the tools you need
-              every day. From EMR systems to IdP collaborations, you get
-              visibility, security, and control for all printing on one unified
-              platform.
-            </p>
-          </div>
+import React from "react"
+import styled from "styled-components"
+import smallPic from "../images/smallPic.png"
+const SimpleCentered = () => {
+  return (
+    <Wrapper>
+      <div className={"content"}>
+        <img src={smallPic} alt={"smallPic"} />
+        <div id={"textWrapper"}>
+          <h3>Simple and Secure Integrations</h3>
+          <p>
+            Our native integrations seamlessly connect the tools you need every
+            day. From EMR systems to IdP collaborations, you get visibility,
+            security, and control for all printing on one unified platform.
+          </p>
         </div>
-      </Wrapper>
-    )
-};
+      </div>
+    </Wrapper>
+  )
+}
 
-export default SimpleCentered;
+export default SimpleCentered
 
 const Wrapper = styled.div`
   display: flex;

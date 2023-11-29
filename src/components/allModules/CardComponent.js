@@ -1,52 +1,52 @@
-import React from "react";
-import styled from "styled-components";
-import whiteImg from '../../images/whiteImg.png'
+import React from "react"
+import styled from "styled-components"
+import whiteImg from "../../images/whiteImg.png"
 
 const CardComponent = () => {
-    return (
-      <Wrapper>
-        <h3>Everything You Need—Plus the Extras You Want</h3>
-        <div className={"cards-wrapper"}>
-          <div className={"card-container"}>
-            <div className={"headerWrapper"}>
-              <h3 className={"header"}>Advanced Security</h3>
+  return (
+    <Wrapper>
+      <h3>Everything You Need—Plus the Extras You Want</h3>
+      <div className={"cards-wrapper"}>
+        <div className={"card-container"}>
+          <div className={"headerWrapper"}>
+            <h3 className={"header"}>Advanced Security</h3>
 
-              <p>
-                Secure your confidential data at all times during printing and
-                stay protected with additional features like Secure Release
-                Printing and Multiple IdP support.
-              </p>
-            </div>
-            <button id={"buttonId"}>Learn More→</button>
+            <p>
+              Secure your confidential data at all times during printing and
+              stay protected with additional features like Secure Release
+              Printing and Multiple IdP support.
+            </p>
           </div>
-          <div className={"card-container"}>
-            <div className={"headerWrapper"}>
-              <h3 className={"header orange"}>Output Management</h3>
-              <p>
-                Connect your print environment to easily manage front- and
-                back-end printing while gaining visibility and keeping all data
-                secure. Enjoy integrations with leading EMR and ERP solutions.
-              </p>
-            </div>
-            <button id={"buttonId"}>Learn More→</button>
-          </div>
-          <div className={"card-container"}>
-            <div className={"headerWrapper"}>
-              <h3 className={"header gray"}>Cost Management</h3>
-
-              <p>
-                Get full visibility into print habits and better control over
-                costs with advanced features like Print Quota Management and
-                Client Cost Management.
-              </p>
-            </div>
-            <button id={"buttonId"}>Learn More→</button>
-          </div>
+          <button id={"buttonId"}>Learn More→</button>
         </div>
-      </Wrapper>
-    )
+        <div className={"card-container"}>
+          <div className={"headerWrapper"}>
+            <h3 className={"header orange"}>Output Management</h3>
+            <p>
+              Connect your print environment to easily manage front- and
+              back-end printing while gaining visibility and keeping all data
+              secure. Enjoy integrations with leading EMR and ERP solutions.
+            </p>
+          </div>
+          <button id={"buttonId"}>Learn More→</button>
+        </div>
+        <div className={"card-container"}>
+          <div className={"headerWrapper"}>
+            <h3 className={"header gray"}>Cost Management</h3>
+
+            <p>
+              Get full visibility into print habits and better control over
+              costs with advanced features like Print Quota Management and
+              Client Cost Management.
+            </p>
+          </div>
+          <button id={"buttonId"}>Learn More→</button>
+        </div>
+      </div>
+    </Wrapper>
+  )
 }
-export default CardComponent;
+export default CardComponent
 
 const Wrapper = styled.div`
   position: relative;
@@ -109,7 +109,6 @@ const Wrapper = styled.div`
     text-align: center;
     color: var(--grey-grey-800191-d-1-e, #191d1e);
     text-align: center;
-    /* Headings/h3Desktop */
     font-family: Archivo;
     font-style: normal;
     font-weight: 700;
@@ -135,7 +134,6 @@ const Wrapper = styled.div`
     background-color: transparent;
     border: none;
     color: var(--orange-primary-orange-ff-5100, #ff5100);
-    /* Body/bodyMBold */
     font-family: Archivo;
     font-size: 18px;
     font-style: normal;
@@ -207,7 +205,7 @@ const Wrapper = styled.div`
       height: auto;
       flex-direction: column;
       align-items: center;
-      
+
       padding: 2vw 10vw 20vw;
     }
     .headerWrapper {

@@ -103,7 +103,6 @@ const ComponentWrapper = styled.div`
     bottom: -50px;
     color: #ff5100;
     left: 30%;
-    /* Headings/h6Desktop */
     font-family: Archivo;
     font-size: 16px;
     font-style: normal;

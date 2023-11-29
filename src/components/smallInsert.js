@@ -1,16 +1,16 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
-const SmallInsert = ()=>{
-    return(
-        <Wrapper>
-            <p>SEAMLESS INTEGRATIONS</p>
-            <h2> Get It All Together</h2>
-            </Wrapper>
-    )
-};
+const SmallInsert = () => {
+  return (
+    <Wrapper>
+      <p>SEAMLESS INTEGRATIONS</p>
+      <h2> Get It All Together</h2>
+    </Wrapper>
+  )
+}
 
-export default SmallInsert;
+export default SmallInsert
 
 const Wrapper = styled.div`
   display: flex;

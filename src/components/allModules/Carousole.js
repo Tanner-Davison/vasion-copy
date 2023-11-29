@@ -39,12 +39,11 @@ const CarosoulWrapper = styled.div`
   gap: 30px;
   align-items: center;
   justify-content: center;
-  body{
-    overflow-x:hidden ;
-  }
-  .logos{
+  body {
     overflow-x: hidden;
-    
+  }
+  .logos {
+    overflow-x: hidden;
   }
   @keyframes scroll {
     from {
@@ -162,7 +161,7 @@ const CarosoulWrapper = styled.div`
       white-space: nowrap;
       animation: scroll 10s linear infinite;
       z-index: 1;
-      gap:49px;
+      gap: 49px;
     }
     .logo-wrapper {
       position: relative;

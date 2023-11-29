@@ -1,47 +1,47 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
 
-const Stats = ()=>{
-    return (
-      <AllWrapper>
-        <StatsFirstSection>
-          <p>A COMPLETE SERVERLESS PRINT SOLUTION</p>
-          <h2>Cloud Native from the Start</h2>
-          <body>
-            Print management shouldn’t be complicated or reliant on unsecure
-            print servers. That’s why we built a simple, scalable, cloud native
-            direct IP printing platform. And why we continually develop
-            additional features—so it’s easy for you to keep up with new
-            technology and keep costs down.
-            <br></br>
-            <span>Learn more about our serverless technology →</span>
-          </body>
-        </StatsFirstSection>
+const Stats = () => {
+  return (
+    <AllWrapper>
+      <StatsFirstSection>
+        <p>A COMPLETE SERVERLESS PRINT SOLUTION</p>
+        <h2>Cloud Native from the Start</h2>
+        <body>
+          Print management shouldn’t be complicated or reliant on unsecure print
+          servers. That’s why we built a simple, scalable, cloud native direct
+          IP printing platform. And why we continually develop additional
+          features—so it’s easy for you to keep up with new technology and keep
+          costs down.
+          <br></br>
+          <span>Learn more about our serverless technology →</span>
+        </body>
+      </StatsFirstSection>
 
-        <StatsSecondSection>
-          <div className={"stat-wrapper"}>
-            <span id={"number"}>97%</span>
-            <p id={"stat-text"}>
-              of customers are likely to recommend PrinterLogic.{" "}
-            </p>
-          </div>
-          <div className={"stat-wrapper"}>
-            <span id={"number"}>71%</span>
-            <p id={"stat-text"}>
-              of customers reduced time spent on print management by more than
-              half.{" "}
-            </p>
-          </div>
-          <div className={"stat-wrapper"}>
-            <span id={"number"}>87%</span>
-            <p id={"stat-text"}>of customers reported at least 100% ROI. </p>
-          </div>
-        </StatsSecondSection>
-      </AllWrapper>
-    )
-};
+      <StatsSecondSection>
+        <div className={"stat-wrapper"}>
+          <span id={"number"}>97%</span>
+          <p id={"stat-text"}>
+            of customers are likely to recommend PrinterLogic.{" "}
+          </p>
+        </div>
+        <div className={"stat-wrapper"}>
+          <span id={"number"}>71%</span>
+          <p id={"stat-text"}>
+            of customers reduced time spent on print management by more than
+            half.{" "}
+          </p>
+        </div>
+        <div className={"stat-wrapper"}>
+          <span id={"number"}>87%</span>
+          <p id={"stat-text"}>of customers reported at least 100% ROI. </p>
+        </div>
+      </StatsSecondSection>
+    </AllWrapper>
+  )
+}
 
-export default Stats;
+export default Stats
 const AllWrapper = styled.div`
   display: flex;
   width: 100vw;
@@ -59,24 +59,23 @@ const StatsFirstSection = styled.div`
   p {
     color: var(--grey-grey-800191-d-1-e, #191d1e);
     text-align: center;
-    /* Eyebrow/eyebrowL */
+
     font-family: Archivo;
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px;
     letter-spacing: 3.6px;
     text-transform: uppercase;
   }
   h2 {
     color: var(--grey-grey-800191-d-1-e, #191d1e);
     text-align: center;
-    /* Headings/h2Desktop */
     font-family: Archivo;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 56px; /* 116.667% */
+    line-height: 56px;
   }
   body {
     color: var(--grey-grey-800191-d-1-e, #191d1e);
@@ -96,25 +95,23 @@ const StatsFirstSection = styled.div`
     p {
       color: var(--grey-grey-800191-d-1-e, #191d1e);
       text-align: center;
-      /* Eyebrow/eyebrowL */
       font-family: Archivo;
       font-size: 18px;
       font-style: normal;
       font-weight: 800;
-      line-height: 24px; /* 133.333% */
+      line-height: 24px;
       letter-spacing: 3.6px;
       text-transform: uppercase;
     }
     body {
       color: var(--grey-grey-800191-d-1-e, #191d1e);
       text-align: center;
-      /* Body/bodyM */
       font-family: Archivo;
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      width:65vw;
-      line-height: 27px; /* 150% */
+      width: 65vw;
+      line-height: 27px;
     }
   }
   @media screen and (min-width: 428px) and (max-width: 1024px) {
@@ -127,24 +124,22 @@ const StatsFirstSection = styled.div`
     p {
       color: var(--grey-grey-800191-d-1-e, #191d1e);
       text-align: center;
-      /* Eyebrow/eyebrowL */
       font-family: Archivo;
       font-size: 18px;
       font-style: normal;
       font-weight: 800;
-      line-height: 24px; /* 133.333% */
+      line-height: 24px;
       letter-spacing: 3.6px;
       text-transform: uppercase;
     }
     h2 {
       color: var(--grey-grey-800191-d-1-e, #191d1e);
       text-align: center;
-      /* Headings/h2Desktop */
       font-family: Archivo;
       font-size: 48px;
       font-style: normal;
       font-weight: 700;
-      line-height: 56px; /* 116.667% */
+      line-height: 56px;
     }
     body {
       color: var(--grey-grey-800191-d-1-e, #191d1e);
@@ -221,12 +216,11 @@ const StatsSecondSection = styled.div`
   #number {
     color: var(--orange-primary-orange-ff-5100, #ff5100);
     text-align: center;
-    /* Statistics Numbers/statDesktop */
     font-family: Orbitron;
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
-    line-height: 48px; /* 100% */
+    line-height: 48px;
   }
   #stat-text {
     color: var(--grey-grey-800191-d-1-e, #191d1e);
@@ -254,12 +248,11 @@ const StatsSecondSection = styled.div`
     #number {
       color: var(--orange-primary-orange-ff-5100, #ff5100);
       text-align: center;
-      /* Statistics Numbers/statDesktop */
       font-family: Orbitron;
       font-size: 48px;
       font-style: normal;
       font-weight: 500;
-      line-height: 48px; /* 100% */
+      line-height: 48px;
     }
     #stat-text {
       color: var(--grey-grey-800191-d-1-e, #191d1e);
@@ -271,7 +264,6 @@ const StatsSecondSection = styled.div`
       line-height: 21px;
     }
   }
-
   @media screen and (max-width: 428px) {
     display: flex;
     flex-direction: column;
@@ -279,7 +271,6 @@ const StatsSecondSection = styled.div`
     justify-content: center;
     align-items: center;
     gap: 24px;
-
     .stat-wrapper {
       display: flex;
       width: 376px;
@@ -291,7 +282,6 @@ const StatsSecondSection = styled.div`
     #number {
       color: var(--orange-primary-orange-ff-5100, #ff5100);
       text-align: center;
-      /* Statistics Numbers/statMobile */
       font-family: Orbitron;
       font-size: 42px;
       font-style: normal;

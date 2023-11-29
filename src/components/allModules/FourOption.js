@@ -1,12 +1,10 @@
 import React from "react"
-import { useState } from "react";
+import { useState } from "react"
 import styled from "styled-components"
 import FourOptionData from "./FourOptionHelper/FourOptionData"
-import Card from './Card.js'
-import Carosoul from "./Carousole.js";
+import Card from "./Card.js"
+import Carosoul from "./Carousole.js"
 const FourOption = () => {
-    
-
   return (
     <>
       <IconDrop>
@@ -19,7 +17,6 @@ const FourOption = () => {
           })}
         </DropDownWrapper>
       </IconDrop>
-     
     </>
   )
 }
@@ -36,7 +33,6 @@ const IconDrop = styled.div`
 
   @media screen and (min-width: 429px) and (max-width: 1024px) {
     padding: 3vw 2vw;
-    
   }
   h3 {
     font-family: Archivo;
@@ -54,7 +50,6 @@ const IconDrop = styled.div`
     margin-bottom: 0px;
   }
   @media screen and (max-width: 428px) {
-    
     align-items: center;
     & > h3 {
       position: relative;
@@ -65,7 +60,7 @@ const IconDrop = styled.div`
       line-height: 40px;
       width: 386px;
       align-self: flex-start;
-      left:-10px;
+      left: -10px;
     }
   }
 `
@@ -91,7 +86,5 @@ const DropDownWrapper = styled.div`
   @media screen and (max-width: 428px) {
     align-items: center;
     flex-direction: column;
-
   }
 `
-

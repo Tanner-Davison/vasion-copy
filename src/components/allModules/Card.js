@@ -1,48 +1,54 @@
-import styled, {css} from "styled-components";
-import React from "react";
-import { useState } from "react";
+import styled, { css } from "styled-components"
+import React from "react"
+import { useState } from "react"
 
-const Card =(cardData)=>{
-  const [hover, setHover] = useState(false);
-  const [showContent, setShowContent]=useState(false)
-  
+const Card = cardData => {
+  const [hover, setHover] = useState(false)
+  const [showContent, setShowContent] = useState(false)
+
   const handleMouseEnter = () => {
-    setHover((prev)=>!prev)
+    setHover(prev => !prev)
     setTimeout(() => setShowContent(true), 800)
   }
   const handleMouseLeave = () => {
-    setHover((prev)=>!prev);
-
-    setShowContent(prev=>!prev)
+    setHover(prev => !prev)
+    setShowContent(prev => !prev)
   }
-    return (
-      <CustomCard
-        key={cardData.cardData.id}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        
-        hover={hover }
-      >
-        <span id="cardHeader">
-          <img src={cardData.cardData.number} alt={"card-number"} />
-          <p>{cardData.cardData.title}</p>
-        </span>
-        <img
-          id={"purple-logo"}
-          src={cardData.cardData.image}
-          alt={"title-representation"}
-        />
-        {hover && (
-          <>
-            <p className={showContent ? 'descriptionHeader':'descriptionHeader hidden' }>{cardData.cardData.contentHead}</p>
-            <p className={showContent ? 'para-appear' : 'para-appear hidden'}>{showContent && cardData.cardData.contentParagraph}</p>
-          </>
-        )}
-      </CustomCard>
-    )
+  return (
+    <CustomCard
+      key={cardData.cardData.id}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      hover={hover}
+    >
+      <span id="cardHeader">
+        <img src={cardData.cardData.number} alt={"card-number"} />
+        <p>{cardData.cardData.title}</p>
+      </span>
+      <img
+        id={"purple-logo"}
+        src={cardData.cardData.image}
+        alt={"title-representation"}
+      />
+      {hover && (
+        <>
+          <p
+            className={
+              showContent ? "descriptionHeader" : "descriptionHeader hidden"
+            }
+          >
+            {cardData.cardData.contentHead}
+          </p>
+          <p className={showContent ? "para-appear" : "para-appear hidden"}>
+            {showContent && cardData.cardData.contentParagraph}
+          </p>
+        </>
+      )}
+    </CustomCard>
+  )
 }
 
-export default Card;
+export default Card
 
 const CustomCard = styled.div`
   position: relative;

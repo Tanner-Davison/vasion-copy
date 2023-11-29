@@ -69,9 +69,7 @@ const ServerlessTech = () => {
             style={{ height: "auto" }}
           />
         </DoubleColumn>
-      <LineDiv>
-
-      </LineDiv>
+        <LineDiv></LineDiv>
       </ContentWrapper>
     </>
   )
@@ -174,10 +172,9 @@ const LineDiv = styled.div`
   width: 100%;
   width: 70vw;
   color: rgb(187, 190, 193);
-  border: .5px solid gray;
+  border: 0.5px solid gray;
   align-self: center;
 `
-
 
 const DoubleColumn = styled.div`
   display: flex;
@@ -311,12 +308,12 @@ const ContentSectionOne = styled.div`
   }
 `
 const DoubleColumnSwitch = styled.div`
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding: 6.944vw 10.278vw;
-    gap: 4.583vw;
-    width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 6.944vw 10.278vw;
+  gap: 4.583vw;
+  width: 100%;
   img {
     height: auto;
     width: 35.694vw;
