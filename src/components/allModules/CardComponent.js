@@ -203,12 +203,12 @@ const Wrapper = styled.div`
     }
     .card-container {
       display: flex;
-      width: 420px;
-      height: 105vw;
+      width: 95vw;
+      height: auto;
       flex-direction: column;
       align-items: center;
-      gap: 67px;
-      padding: 2vw 10vw 7vw;
+      
+      padding: 2vw 10vw 20vw;
     }
     .headerWrapper {
       display: flex;

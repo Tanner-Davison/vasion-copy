@@ -183,7 +183,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: flex-start;
     .header {
-      width: 428px;
+      width: 90vw;
       padding-left: 0px;
     }
     .header > p {
