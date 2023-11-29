@@ -49,18 +49,7 @@ const CardComponent = () => {
 export default CardComponent
 
 const Wrapper = styled.div`
-  position: relative;
-  display: flex;
-  width: 100vw;
-  height: 780px;
-  padding: 100px 0px;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(247, 245, 249);
-  justify-content: center;
-  gap: 40px;
-  align-self: center;
-  justify-self: center;
+ 
   .cards-wrapper {
     position: relative;
     display: flex;

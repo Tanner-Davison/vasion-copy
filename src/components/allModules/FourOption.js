@@ -43,10 +43,12 @@ const IconDrop = styled.div`
     width: 565px;
   }
   @media screen and (min-width: 1441px) {
-    gap: 40px;
-    width: 100vw;
-    height: 724px;
-    padding: 100px 20vw 0px 20vw;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 2vw;
+    width: 100%;
+    padding: 7vw 10vw 17vw;
     margin-bottom: 0px;
   }
   @media screen and (max-width: 428px) {

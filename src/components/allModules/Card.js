@@ -120,10 +120,7 @@ const CustomCard = styled.div`
     line-height: 27px;
     transition: opacity 0.6s ease-in;
   }
-  @media screen and (min-width: 1441px) {
-    padding: 20px 40px 30px 50px;
-    gap: 12px;
-  }
+  
   @media screen and (min-width: 1025px) and (max-width: 1440px) {
     .descriptionHeader {
       font-family: Archivo;
