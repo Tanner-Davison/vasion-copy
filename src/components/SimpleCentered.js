@@ -60,6 +60,12 @@ const Wrapper = styled.div`
     width: 100vw;
     align-items: center;
 
+    #textWrapper {
+      width: 45vw;
+    }
+    p {
+      width: 196px;
+    }
     img {
       width: 45vw;
     }
@@ -67,9 +73,9 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
-      gap: 50px;
-      padding: 0px 40px 60px 64px;
-      justify-content: center;
+      gap: 0px;
+      padding: 0px 40px 60px 218px;
+      justify-content: flex-start;
     }
   }
   @media screen and (max-width: 428px) {

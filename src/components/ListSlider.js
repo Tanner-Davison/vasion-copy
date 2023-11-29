@@ -117,7 +117,7 @@ const Wrapper = styled.div`
   @media screen and (min-width: 428px) and (max-width: 1024px) {
     display: flex;
     width: 100vw;
-    padding: 60px 0px 60px 24px;
+    padding: 60px 0px 60px 1px;
     align-items: flex-start;
 
     .header {
@@ -163,16 +163,15 @@ const Wrapper = styled.div`
     }
     p {
       color: var(--grey-grey-800191-d-1-e, #191d1e);
-      /* Body/bodyL - 20|30 */
       font-family: Archivo;
-      font-size: 20px;
       font-style: normal;
       font-weight: 400;
-      line-height: 30px;
+      line-height: 28px;
     }
     img {
-      width: 44px;
-      height: 44px;
+      height: 34px;
+      padding-top: 5px;
+      width: unset;
     }
   }
 

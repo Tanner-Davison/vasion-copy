@@ -26,8 +26,8 @@ const Wrapper = styled.div`
   background: #3d2562;
   button {
     transition: transform 0.3s ease-in-out;
-    color:white;
-    border:none;
+    color: white;
+    border: none;
   }
   button:hover {
     transform: scale(1.1);
@@ -60,7 +60,7 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 1px;
     border-radius: 28px;
-    color:white;
+    color: white;
     background: var(--orange-primary-orange-ff-5100, #ff5100);
   }
   button {
@@ -95,6 +95,7 @@ const Wrapper = styled.div`
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
+      width: 300px;
       line-height: 27px; /* 150% */
     }
     button {
@@ -104,7 +105,7 @@ const Wrapper = styled.div`
       justify-content: center;
       align-items: center;
       gap: 1px;
-      color:white;
+      color: white;
       border-radius: 28px;
       border: none;
       background: var(--orange-primary-orange-ff-5100, #ff5100);
@@ -152,7 +153,7 @@ const Wrapper = styled.div`
       padding: 10px 20px;
       justify-content: center;
       align-items: center;
-      color:white;
+      color: white;
       gap: 1px;
       border-radius: 20px;
       background: var(--orange-primary-orange-ff-5100, #ff5100);

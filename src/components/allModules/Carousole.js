@@ -39,7 +39,13 @@ const CarosoulWrapper = styled.div`
   gap: 30px;
   align-items: center;
   justify-content: center;
-
+  body{
+    overflow-x:hidden ;
+  }
+  .logos{
+    overflow-x: hidden;
+    
+  }
   @keyframes scroll {
     from {
       transform: translateX(0);

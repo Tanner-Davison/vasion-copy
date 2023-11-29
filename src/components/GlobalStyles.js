@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
+body{
+  overflow-x: hidden;
+}
   p {
     font-family: 'Archivo';
     margin:0px;

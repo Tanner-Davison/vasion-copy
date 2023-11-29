@@ -89,11 +89,11 @@ const ComponentWrapper = styled.div`
   }
   span {
     position: absolute;
-    top: 44px;
-    left: -53px;
+    top: 55px;
+    left: -70px;
     color: var(--purple-primary-purple-591559, #591559);
     font-family: Archivo;
-    font-size: 140px;
+    font-size: 8em;
     font-style: normal;
     font-weight: 700;
     line-height: 45px;
@@ -137,6 +137,17 @@ const ComponentWrapper = styled.div`
       width: 80%;
       height: auto;
       gap: 24px;
+    }
+    span {
+      position: absolute;
+      top: 37px;
+      left: -1px;
+      color: var(--purple-primary-purple-591559, #591559);
+      font-family: Archivo;
+      font-size: 6em;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 45px;
     }
     .paragraph {
       font-size: 4.5vw;
